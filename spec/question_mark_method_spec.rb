@@ -12,6 +12,10 @@ describe QuestionMarkMethod do
     it "returns the original method result of true" do
       alice.name?.should == true
     end
+
+    it_behaves_like "false_when_no_attribute_related" do
+      let(:excution) { alice.email? }
+    end
   end
 
   context "not end with a question mark" do
@@ -37,6 +41,10 @@ describe QuestionMarkMethod do
 
     it "raises a NoMethodError" do
       lambda {alice.has_been_charged }.should raise_error(NoMethodError)
+    end
+
+    it_behaves_like "false_when_no_attribute_related" do
+      let(:excution) { alice.email? }
     end
   end
 end
