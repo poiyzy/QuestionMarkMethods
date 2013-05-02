@@ -1,1 +1,1 @@
-require 'question_mark_methods'
+require 'question_mark_method'
