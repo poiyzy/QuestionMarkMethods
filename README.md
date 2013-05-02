@@ -1,6 +1,6 @@
 # QuestionMarkMethods
 
-I love the attribute query methods in ActiveRecord, Query methods allow me to us whether an attribute value is present. For example:
+I love the attribute query methods in ActiveRecord, Query methods allow me to check whether an attribute value is present. For example:
 
 ```ruby
 user = User.new(:name => "David")
