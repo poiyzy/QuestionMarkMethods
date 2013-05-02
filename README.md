@@ -10,7 +10,7 @@ anonymous = User.new(:name => "")
 anonymous.name? # => false
 ```
 
-I love the question mark at the end of the method name, because it makes the code more readable. But what should we do if we do not use ActiveRecord? Also you can implement like below:
+I love the question mark at the end of the method name, because it makes the code more readable. But what should we do if we do not use ActiveRecord? Also you can implement it like below:
 
 ```ruby
 class User
@@ -22,7 +22,7 @@ class User
 end
 ```
 
-But I am tired of this, all I need it is just adding a question mark at the end of the method name, so I build this gem to reduce that codes.
+But I am tired of this, all I need is just adding a question mark at the end of the method name, so I build this gem to reduce that codes.
 
 ## Installation
 
@@ -105,7 +105,7 @@ user.has_been_charged? # => true
 user.has_a_name? # => "alice"
 ```
 
-When we using alias_method to do the same thing, We need to add `attr_reader` first and use `alias_method` twice to define two aliases. Maybe you have noticed the biggest problem, `user.has_a_name?` returns the value of @name, but we need a boolean in this case.
+When we using alias_method to do the same thing, We need to add `attr_reader` first and use `alias_method` twice to define two aliases. Maybe you have noticed the biggest problem, `user.has_a_name?` returns the value of @name, but we need a boolean.
 
 ## About
 
