@@ -1,5 +1,7 @@
 # QuestionMarkMethods
 
+[![Code Climate](https://codeclimate.com/github/poiyzy/QuestionMarkMethods.png)](https://codeclimate.com/github/poiyzy/QuestionMarkMethods)
+
 I love the attribute query methods in ActiveRecord, Query methods allow me to check whether an attribute value is present. For example:
 
 ```ruby
